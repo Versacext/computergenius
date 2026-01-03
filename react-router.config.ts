@@ -1,8 +1,8 @@
 import type { Config } from "@react-router/dev/config";
 
 export default {
-  // Настройка сервера
+  // Указываем, что папка приложения находится в src/app
+  appDirectory: "src/app", 
   ssr: true,
-  // Выключаем пререндеринг, чтобы Netlify не выдавал ошибку SyntaxError
   prerender: false,
 } satisfies Config;
