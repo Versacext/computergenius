@@ -1,7 +1,8 @@
-import type { Config } from '@react-router/dev/config';
+import type { Config } from "@react-router/dev/config";
 
 export default {
-	appDirectory: './src/app',
-	ssr: true,
-	prerender: ['/*?'],
+  // Настройка сервера
+  ssr: true,
+  // Выключаем пререндеринг, чтобы Netlify не выдавал ошибку SyntaxError
+  prerender: false,
 } satisfies Config;
